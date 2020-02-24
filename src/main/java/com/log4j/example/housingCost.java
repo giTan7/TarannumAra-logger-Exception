@@ -61,6 +61,11 @@ public class housingCost {
 		log.info("enter area of the house:");
 		double area = sc.nextDouble();
 		sc.close();
+		if(area<0) {
+			throw new IllegalArgumentException("Only Positive Numbers & no Letters Please!");
+
+		}
+
 
 
 		housingCost obj = new housingCost(area);
